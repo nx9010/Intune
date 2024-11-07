@@ -1,3 +1,4 @@
-# Intune related content
-
-- 
+# Intune repo
+- Applications
+- Remediations
+- Platform Scripts

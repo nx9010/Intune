@@ -1,2 +1,2 @@
-# Intune win32 applications
-- PSTools Suite
+# Intune > Applications > Win32
+> Win32 applications packaged for Intune deployment.
