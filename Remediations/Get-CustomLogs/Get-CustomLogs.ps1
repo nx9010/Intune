@@ -63,7 +63,7 @@ try {
 
     ## Upload the Zip file to the Blob Storage using AzCopy
     $sasUrlroot = 'https://springintune01.blob.core.windows.net/intune-software-logs'
-    $sasUrl = 'https://springintune01.blob.core.windows.net/intune-software-logs?sp=racw&st=2025-10-24T18:46:43Z&se=2035-10-25T03:01:43Z&spr=https&sv=2024-11-04&sr=c&sig=G7Mh%2F5Bwk13q6ti39Cf1rq%2FPOosFzktF0NzJOPiP1X4%3D'
+    $sasUrl = '<your-sas-url-here>'
     Start-Process -FilePath "$baseFolderPath\azcopy.exe" -ArgumentList "copy $logFileName $sasUrl" -WorkingDirectory $baseFolderPath -NoNewWindow -Wait
     $logFileUrl = "$sasUrlroot/$logFileName"
 
@@ -76,3 +76,4 @@ try {
 catch {
     Write-Host "An error occurred: $_ | Stack Trace: $($_.ScriptStackTrace)"
 }
+
